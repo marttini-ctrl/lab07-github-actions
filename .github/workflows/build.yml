@@ -22,3 +22,6 @@ jobs:
 
       - name: Restore dependencies
         run: dotnet restore MyApp/MyApp.csproj
+
+      - name: Build project
+        run: dotnet build MyApp/MyApp.csproj --configuration Release --no-restore
