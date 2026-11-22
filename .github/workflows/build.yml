@@ -17,6 +17,9 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+
+      - name: Check repository structure
+        run: bash scripts/check-repository.sh "MyApp/MyApp.csproj"
     
       - name: Hello runner
         run: echo "Runner is ready"
