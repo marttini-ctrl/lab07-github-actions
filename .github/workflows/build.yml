@@ -25,3 +25,6 @@ jobs:
 
       - name: Build project
         run: dotnet build MyApp/MyApp.csproj --configuration Release --no-restore
+
+      - name: Run application
+        run: dotnet run --project MyApp/MyApp.csproj --configuration Release --no-build
