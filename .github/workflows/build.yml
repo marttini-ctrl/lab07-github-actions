@@ -1,0 +1,12 @@
+name: Build .NET App
+
+on:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Hello runner
+        run: echo "Runner is ready"
